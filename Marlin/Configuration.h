@@ -459,7 +459,7 @@
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 275
+#define HEATER_0_MAXTEMP 300
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
@@ -504,9 +504,9 @@
   //#define DEFAULT_Kd 440
 
   // Mein Hotend
-  #define  DEFAULT_Kp 31.92
-  #define  DEFAULT_Ki 3.36
-  #define  DEFAULT_Kd 75.84
+  #define  DEFAULT_Kp 18.24
+  #define  DEFAULT_Ki 0.97
+  #define  DEFAULT_Kd 85.84
 
 #endif // PIDTEMP
 
@@ -556,9 +556,9 @@
   //#define DEFAULT_bedKd 1675.16
 
   // Mein Bett
-  #define  DEFAULT_bedKp 456.83
-  #define  DEFAULT_bedKi 79.66
-  #define  DEFAULT_bedKd 654.92
+  #define  DEFAULT_bedKp 224.75
+  #define  DEFAULT_bedKi 37.36
+  #define  DEFAULT_bedKd 901.42
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -753,7 +753,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100,  100, 400, 103}
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100,  100, 400, 415}
 
 /**
  * Default Max Feed Rate (mm/s)
